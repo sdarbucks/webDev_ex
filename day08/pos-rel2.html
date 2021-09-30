@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position 속성</title>
+    <style>
+        #wrap{
+            width: 300px;
+            height: 300px;
+            border: 1px solid #ccc;
+            position: relative;
+            /* 기준이 되는 상위 요소 */
+        }
+        .box{
+            width: 50px;
+            height: 50px;
+            background-color: #00f;
+            position: absolute;
+            /* 상위 요소를 기준으로 absolute 배치 */
+        }
+        #coord1{
+            top: 0; left: 0;
+        }
+        #coord2{
+            top: 0; right: 0;
+        }
+        #coord3{
+            bottom: 0; left: 0;
+        }
+        #coord4{
+            bottom: 0; right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="box" id="coord1"></div> 
+        <div class="box" id="coord2"></div> 
+        <div class="box" id="coord3"></div> 
+        <div class="box" id="coord4"></div> 
+        <!-- *coordinate: (명사)좌표 -->
+    </div>
+</body>
+</html>
