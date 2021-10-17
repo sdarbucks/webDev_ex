@@ -1,0 +1,32 @@
+webproject
+
+1. polls(프로젝트)
+    - poll 앱
+
+2. pyweb(인덱스, 로그인, 질문/답변, 주제메뉴)
+    - pybo(게시판) 앱
+    - common(회원) 앱
+    - 주제 앱
+
+3. blog 프로젝트, 북마크 프로젝트
+
+(mysite) c:\webproject\pyweb>django-admin startproject config .
+(mysite) c:\webproject\pyweb>python manage.py runserver	// 로켓 사이트
+
+디자인 프레임워크 - 부트스트랩(bootstrap)
+bootstrap.css
+bootstrap.min.css
+
+base.html
+
+자바스크립트 - 웹 최적화 라이브러리(제이쿼리)
+jquery
+
+common 앱 설치
+
+파이썬
+
+
+
+
+
