@@ -1,0 +1,71 @@
+내비게이션 추가하는 법
+
+1. pybo 앱 생성하기
+(mysite) C:\webproject\ pyweb>python manage.py startapp pybo
+
+
+
+2. config/setting.py 에 ‘pybo’앱 등록하기
+INSTALLED_APPS = [
+ ‘pybo.apps.PyboConfig’,
+ ‘django.contrib.admin’,
+ ‘django.contrib.auth’,
+]
+
+
+
+3. pybo/views.py 작성하기
+from django.shortcuts import render
+
+def pcgame_index(request):
+    return render(request, 'pcgame/pcgame_index.html')
+
+
+
+4. config/urls.py views.index 경로 설정하기
+path('congame/', include('congame.urls')),    # 127.0.0.1:8000/congame/
+
+
+
+5. pybo 하위에 urls.py 생성하기
+from django.urls import path
+from . import views
+app_name = 'pcgame'
+
+urlpatterns = [
+    # 127.0.0.1:8000/pcgame/
+    path('', views.pcgame_index, name='pcgame_index'),
+]
+
+
+
+6. 내비게이션 및 html 파일 생성하면 끝!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
